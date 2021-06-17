@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TI Mall BMS System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="temp.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script>
+
+    
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">TI MALL</div>
+                <ul>
+                    <li><a href="#">
+                            <i class="fas fa-search"></i></a></li>
+                    <li><a href="#">
+                            <i class="fas fa-bell"></i>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-user"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="/officeTemp">
+                        <span class="icon"><i class="fas fa-book"></i></span>
+                        <span class="title">Office Temp</span></a></li>
+                <li><a href="/malltemp">
+                        <span class="icon"><i class="fas fa-file-video"></i></span>
+                        <span class="title">Mall Temp</span>
+                    </a></li>
+                <li><a href="ctwater">
+                        <span class="icon"><i class="fas fa-volleyball-ball"></i></span>
+                        <span class="title">CT Water</span>
+                    </a></li>
+                <li><a href="waterlevel" class="active">
+                        <span class="icon"><i class="fas fa-blog"></i></span>
+                        <span class="title">Water Level</span>
+                    </a></li>
+                <li><a href="chillerplant">
+                        <span class="icon"><i class="fas fa-leaf"></i></span>
+                        <span class="title">Chiller Plant</span>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="main_container">
+            <div class="item">
+                <h1>Mall Temprature</h1>
+            </div>
+            
+            <div class="item">
+                <h2>Ground Floor</h2>
+                <div class="center">
+                    <div align="center" class="form">
+                        <br><br>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;'
+                            id="temperature">
+                            <img src='temperature.png' height="60px" width="60px" style='vertical-align: middle' />
+                            00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="humidity">
+                            <img src='humidity.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <h2>First Floor</h2>
+                <div class="center">
+                    <div align="center" class="form">
+                        <br><br>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;'
+                            id="temperature1">
+                            <img src='temperature.png' height="60px" width="60px" style='vertical-align: middle' />
+                            00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="humidity1">
+                            <img src='humidity.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <h2>Second Floor</h2>
+                <div class="center">
+                    <div align="center" class="form">
+                        <br><br>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;'
+                            id="temperature2">
+                            <img src='temperature.png' height="60px" width="60px" style='vertical-align: middle' />
+                            00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="humidity2">
+                            <img src='humidity.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="addtime2">
+                            <img src='time.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <h2>Third Floor</h2>
+                <div class="center">
+                    <div align="center" class="form">
+                        <br><br>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;'
+                            id="temperature2">
+                            <img src='temperature.png' height="60px" width="60px" style='vertical-align: middle' />
+                            00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="humidity2">
+                            <img src='humidity.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="addtime2">
+                            <img src='time.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <h2>Fourth Floor</h2>
+                <div class="center">
+                    <div align="center" class="form">
+                        <br><br>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;'
+                            id="temperature2">
+                            <img src='temperature.png' height="60px" width="60px" style='vertical-align: middle' />
+                            00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="humidity2">
+                            <img src='humidity.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="addtime2">
+                            <img src='time.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <h2>Fifth Floor</h2>
+                <div class="center">
+                    <div align="center" class="form">
+                        <br><br>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;'
+                            id="temperature2">
+                            <img src='temperature.png' height="60px" width="60px" style='vertical-align: middle' />
+                            00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="humidity2">
+                            <img src='humidity.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                        <p style='line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="addtime2">
+                            <img src='time.png' height="60px" width="60px" style='vertical-align: middle' /> 00.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+        </div>
+    </div>
+
+
+    <!-- <script src="led.js"></script>
+
+</body>
+
+</html>
